@@ -209,7 +209,10 @@ section{
     transition: 2s ease;
     transition-property: clip-path;
 }
-
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
 @media (max-width: 1040px){
     header{
         padding: 12px 20px;
@@ -287,7 +290,7 @@ section{
 
         @media (max-width: 400px){
             .home .content h1{
-                font-size: 3em;
+                font-size: 2em;
                 line-height: 50px;
             }
             .home .content p{
@@ -304,6 +307,12 @@ section{
             }
             .video-slide{
                 height: auto;
+            }
+            .menu-btn {
+                display: block;
+                color: #fff;
+                font-size: 25px;
+                margin-top: 10px; 
             }
         }
 

@@ -89,3 +89,12 @@ var autoSlide = function() {
 // Set the interval for auto-move (e.g., every 3 seconds)
 setInterval(autoSlide, 3000);
 
+
+// common question
+
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const faqItem = question.parentElement;
+        faqItem.classList.toggle('active');
+    });
+});

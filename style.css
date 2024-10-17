@@ -30,6 +30,7 @@ header .brand{
     text-decoration: none;
 }
 
+
 header .brand:hover{
     color: #0f1a35;
 }
@@ -37,7 +38,10 @@ header .brand:hover{
 header .navigation{
     position: relative;
 }
-
+header img{
+    width: 100%;
+    height: 80px;
+}
 header .navigation .navigation-items a{
     position: relative;
     color: #fff;
@@ -461,12 +465,12 @@ section{
         }
          */
 
-        .rooms h1 {
+        .rooms h1 ,.contact h1{
             font-size: 3rem;
             margin-bottom: 20px;
         }
         
-        .rooms p {
+        .rooms p , .contact p{
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
@@ -569,7 +573,7 @@ section{
         .room-info .btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #007b5e;
+            background-color: #b48845;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -577,7 +581,7 @@ section{
         }
         
         .room-info .btn:hover {
-            background-color: #005f4a;
+            background-color: #b8805b;
         }
         
         .room-image {
@@ -844,6 +848,7 @@ section{
         margin-bottom: 10px;
     }
     
+    
     .footer-column ul li a {
         color: #fff;
         text-decoration: none;
@@ -909,7 +914,10 @@ section{
     .footer-bottom .footer-logo {
         margin-bottom: 10px;
     }
-    
+    .footer-logo img {
+        width: 150px;
+        height: 80px ;
+    }
     .footer-bottom p {
         margin: 0;
         color: #aaa;
@@ -1097,7 +1105,7 @@ section{
     display: flex;
     align-items: center;
     background-color: #fdfeff; 
-    padding: 10px 20px; 
+    padding: 3px 15px; 
     border-radius: 50px;
     text-decoration: none; 
     gap: 15px;
@@ -1123,10 +1131,10 @@ section{
     content: "";
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    width: 40px; 
-    height: 40px;
+    width: 50px; 
+    height: 50px;
     border-radius: 50%;
     border: 3px solid #acacac;
     opacity: 0.8;
@@ -1193,3 +1201,155 @@ section{
      
     }
   }
+
+
+  /* common question  */
+ 
+
+.ques {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.faq-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.toggle-icon {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .faq-container {
+        width: 95%;
+    }
+}
+
+/* service */
+
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.services-section {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 36px;
+    color: #000133;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    font-size: 20px;
+    color: white;
+    background-color: #b48845;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+}
+
+.service-icon.blue {
+    background-color: #000133;
+}
+
+.service-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

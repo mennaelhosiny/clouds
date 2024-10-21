@@ -6,6 +6,7 @@
     font-family: 'cairo', sans-serif;
     direction: rtl;
 }
+
 p{
     line-height: 25px;
 }
@@ -444,6 +445,7 @@ section{
             }
         
             .btn {
+                margin-top: 10px;
                 padding: 6px 12px;
             }
         }
@@ -666,6 +668,9 @@ section{
             align-items: center;
             justify-content: center;
             flex-direction: column; 
+        }
+        .card .swiper-slide{
+            width: 380px;
         }
         
         .slide-container {

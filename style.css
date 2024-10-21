@@ -25,6 +25,18 @@ header{
    
 }
 
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(255 255 255 / 0%), rgb(0 0 0 / 80%));
+    pointer-events: none;
+}
+
 header .brand{
     color: #fff;
     font-size: 1.5rem;
@@ -72,7 +84,7 @@ header .navigation .navigation-items a:hover:before{
      background: #0f1a35; 
 }
 
-section{
+.home{
     padding: 100px 200px;
 }
     /* home */
@@ -309,13 +321,15 @@ section{
             }
             .home{
                 height: auto;
+                padding: 90px 20px;
             }
+
             .home .content a{
                 padding: 10px 25px;
                 font-size: 1em;
                 border-radius: 2px;
             }
-            .video-slide{
+            .video-slide img{
                 height: auto;
             }
             .menu-btn {
@@ -324,6 +338,8 @@ section{
                 font-size: 25px;
                 margin-top: 10px; 
             }
+           
+            
         }
 
         /* about */
@@ -344,7 +360,12 @@ section{
             width: 45%;
         }
        
-        
+        #video{
+            background-image: url(images/Website.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
         .hotel-image img {
             width: 100%;
             height: auto;
@@ -384,7 +405,6 @@ section{
         }
         
         .hotel-address {
-            background-color: #f0f0f0;
             padding: 15px;
             border-radius: 5px;
             font-size: 0.9rem;
@@ -656,7 +676,7 @@ section{
             padding: 40px 20px;
             text-align: center; 
         }
-        
+       
         .feedbac h1 {
             font-size: 2.5rem;
             color: #000133;
@@ -762,12 +782,12 @@ section{
         
         
         .swiper-navBtn {
-            color: var(--blue) !important;
+            color: #000133 !important;
             transition: color 0.3s ease;
         }
         
         .swiper-navBtn:hover {
-            color: var(--blue);
+            color: #000133;
         }
         
         .swiper-navBtn::before,
@@ -784,12 +804,12 @@ section{
         }
         
         .swiper-pagination-bullet {
-            background-color: var(--blue) !important;
+            background-color: #000133 !important;
             opacity: 1;
         }
         
         .swiper-pagination-bullet-active {
-            background-color: var(--blue) !important;
+            background-color: #000133 !important;
         }
         
         @media screen and (max-width: 768px) {
@@ -828,7 +848,7 @@ section{
         .footer {
             text-align: center;
             padding: 50px 20px;
-            background-color: var(--blue);
+            background-color: #000133;
         }
         
         .footer-title {
@@ -1248,7 +1268,7 @@ section{
     }
   }
   
-  @media (max-width: 390px) {
+  @media (min-width: 415px) {
     .contact-us {
       bottom: 10px;
       right: 10px;
@@ -1266,6 +1286,7 @@ section{
       height: 40px;
      
     }
+   
   }
 
 
@@ -1346,6 +1367,7 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 50px 200px;
 }
 
 .services-section {
@@ -1418,5 +1440,8 @@ section{
 @media (max-width: 480px) {
     .services-grid {
         grid-template-columns: 1fr;
+    }
+    .service{
+        padding: 0;
     }
 }

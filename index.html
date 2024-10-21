@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كلاودز </title>
+    <title>فندق كلاودز </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -78,7 +78,7 @@
           <!-- about -->
           <section class="hotel-section" id="about">
               <div class="hotel-image">
-                  <img src="images/about us/Vector Smart Object.png" alt="Luxury Hotel Room">
+                  <img src="images/Vector-Smart-Object.webp" alt="Luxury Hotel Room">
                   <div class="award-badge">
                       <span>Clouds Hotel</span>
                   </div>
@@ -94,7 +94,33 @@
                   <a href="rooms.html" class="btn">احجز الآن</a>
               </div>
           </section>
-                  
+          <section class="hotel-section " id="video" >
+
+            <div class="hotel-description">
+              <h2>فندق كلاودز في المدينة المنورة  </h2>
+              <p>فندق 4 نجوم، يقدم تجربة إقامة فاخرة تجمع بين الراحة العصرية والخدمات المميزة، يقع في موقع مميز في حي العريض، قريب من جميع الوجهات الأساسية والمراكز الحيوية في المدينة المنورة.
+                نوفر لك مجموعة متنوعة من الغرف والأجنحة لتناسب احتياجات العائلات والأفراد الباحثين عن إقامة مميزة.
+              </p>
+              <div class="hotel-address">
+                <p>يمكن لضيوفنا الاستمتاع بتجربة استرخاء فريدة، مع أجواء مثالية للاحتفال بالمناسبات الخاصة، حيث نحرص على جعل كل لحظة تعيشها في فندقنا لا تُنسى مع خدمات مخصصة تفوق توقعاتكم.</p>
+              </div>
+              <a href="rooms.html" class="btn">احجز الآن</a>
+          </div>
+
+
+              <video width="600" autoplay muted playsinline controls loop>
+                <source src="images/clouds.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <script>
+                // Optional: Check for errors in loading the video
+                document.querySelector('video').addEventListener('error', function(event) {
+                    console.log('Error loading video:', event);
+                    alert('There was an error loading the video.');
+                });
+            </script>
+           
+        </section>          
            <!-- reviews -->     
            <main class="feedbac" id="review">
             <h1>ماذا قالوا ضيوفنا ؟  </h1>
@@ -284,6 +310,19 @@
               </div>
              </section>
 
+
+             <iframe 
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.9184592349445!2d39.648816!3d24.47826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbf63e7351695%3A0xffe7b221f900cd62!2z2KfZhti02YMg2KzYp9mEIC0gQ0xPVURTIEhPVEVM!5e0!3m2!1sen!2seg!4v1697891809431!5m2!1sen!2seg" 
+             width="100%" 
+             height="400" 
+             style="border:0;" 
+             allowfullscreen="" 
+             loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade">
+           </iframe>
+           
+
+
           <!-- footer -->        
               <footer class="footer">
                   <div class="footer-container">
@@ -333,7 +372,7 @@
 
           <!-- contact-us -->
           <div class="contact-us">
-            <a href="https://wa.me/+966582075522" class="whatsapp-link " >
+            <a href="https://wa.me/+966582075522" class="whatsapp-link" >
               <span class="pill-text" style="opacity: 0;">WhatsApp</span>
               <img src="images/Download Free Vectors, Images, Photos & Videos _ Vecteezy.webp" alt="WhatsApp Icon" class="circle-img">
             </a>

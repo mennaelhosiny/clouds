@@ -1,5 +1,4 @@
 
-//card
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -45,9 +44,8 @@ const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".video-slide");
 const contents = document.querySelectorAll(".content");
 
-var currentIndex = 0; // Initialize the current slide index
+var currentIndex = 0; 
 
-// Function to navigate the slides
 var sliderNav = function(manual) {
     btns.forEach((btn) => {
         btn.classList.remove("active");
@@ -65,32 +63,28 @@ var sliderNav = function(manual) {
     slides[manual].classList.add("active");
     contents[manual].classList.add("active");
 
-    currentIndex = manual; // Update the current slide index
+    currentIndex = manual; 
 }
 
-// Event listeners for manual navigation
 btns.forEach((btn, i) => {
     btn.addEventListener("click", () => {
         sliderNav(i);
     });
 });
 
-// Auto-move functionality
 var autoSlide = function() {
-    currentIndex++; // Increment the current index
+    currentIndex++; 
 
     if (currentIndex >= slides.length) {
-        currentIndex = 0; // Reset to the first slide if the index exceeds the length
+        currentIndex = 0;
     }
 
-    sliderNav(currentIndex); // Navigate to the next slide
+    sliderNav(currentIndex);
 }
 
-// Set the interval for auto-move (e.g., every 3 seconds)
-setInterval(autoSlide, 3000);
+setInterval(autoSlide, 5000);
 
 
-// common question
 
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
@@ -105,9 +99,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
   
-      // Smooth scroll to the target section
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
       });
     });
   });
+  

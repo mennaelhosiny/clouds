@@ -304,6 +304,8 @@ header .navigation .navigation-items a:hover:before{
             background-position: center;
             transition: 0.3s ease;
         }
+
+        
         }
 
         @media (max-width: 415px){
@@ -1266,9 +1268,10 @@ header .navigation .navigation-items a:hover:before{
       bottom: 15px;
       right: 35px;
     }
+
   }
   
-  @media (min-width: 415px) {
+  @media (max-width: 390px) {
     .contact-us {
       bottom: 10px;
       right: 10px;
@@ -1298,7 +1301,6 @@ header .navigation .navigation-items a:hover:before{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f5f5f5;
 }
 
 .faq-container {
@@ -1368,6 +1370,7 @@ header .navigation .navigation-items a:hover:before{
     align-items: center;
     min-height: 100vh;
     padding: 50px 200px;
+    background-color: #f0f0f0;
 }
 
 .services-section {

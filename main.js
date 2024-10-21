@@ -98,3 +98,16 @@ document.querySelectorAll('.faq-question').forEach(question => {
         faqItem.classList.toggle('active');
     });
 });
+
+
+//scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      // Smooth scroll to the target section
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });

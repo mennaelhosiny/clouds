@@ -345,7 +345,7 @@ header .navigation .navigation-items a:hover:before{
 
         /* about */
       
-        .hotel-section,.hotel-section2 {
+        .hotel-section {
             display: flex;
             justify-content: space-between;
             align-items: center;

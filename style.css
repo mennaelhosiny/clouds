@@ -322,8 +322,7 @@ header .navigation .navigation-items a:hover:before{
                 height: 80px;
             }
             .home{
-                height: auto;
-                padding: 90px 20px;
+                padding: 70px 20px;
             }
 
             .home .content a{
@@ -346,7 +345,7 @@ header .navigation .navigation-items a:hover:before{
 
         /* about */
       
-        .hotel-section {
+        .hotel-section,.hotel-section2 {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -381,10 +380,9 @@ header .navigation .navigation-items a:hover:before{
             right: 0px; 
             background-color: #0f1a35;
             color: #fff;
-            padding: 15px 30px;
+            padding: 45px 30px;
             border-radius: 5px;
             height: 120px;
-            width: 120px;
         }
         
         .hotel-description {
@@ -513,6 +511,8 @@ header .navigation .navigation-items a:hover:before{
             border-radius: 5px;
             font-size: 1.1rem;
             transition: background-color 0.3s ease;
+            margin-bottom: 40px;
+
         }
         
         .btn:hover {
@@ -1054,6 +1054,7 @@ header .navigation .navigation-items a:hover:before{
         align-items: center;
         justify-content: center;
         height: 100vh;
+        margin: 100px ;
     }
     
     .contact-container {

@@ -293,7 +293,7 @@ section{
         }
         }
 
-        @media (max-width: 410px){
+        @media (max-width: 415px){
             .home .content h1{
                 font-size: 2em;
                 line-height: 50px;

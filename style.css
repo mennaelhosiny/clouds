@@ -1269,7 +1269,7 @@ header .navigation .navigation-items a:hover:before{
 
         }
     }
-    @media (max-width: 400px) {
+    @media (max-width: 415px) {
         .room-image img {
             width: 100%;
 

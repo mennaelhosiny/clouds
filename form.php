@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "u706526857_menna", "Mennnnna12345#", "u706526857_survey");
+    $conn = new mysqli("localhost", "root", "", "contact");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'])) {
     
     $to = "mennaelhosiny3@gmail.com";
 
-    $sql = "INSERT INTO platinum (name, email, message) VALUES ('$name', '$email', '$message')";
+    $sql = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
 
     if ($conn->query($sql) === TRUE) {
         $subject = "New Form Submission Notification";
